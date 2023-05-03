@@ -9,7 +9,7 @@ model = load_model('EPRIFeb28V1.h5')
 img_width, img_height = 512, 512
 
 # Load an image to visualize the feature maps
-img_path = 'C:/Users/Adam/PycharmProjects/EPRIProjectV2/Training_SolarImages/Predict/Broken/Broken0.jpg'
+img_path = '/Training_SolarImages/Predict/Broken/Broken0.jpg'
 img = load_img(img_path, target_size=(img_width, img_height))
 x = img_to_array(img)
 x = np.expand_dims(x, axis=0)
